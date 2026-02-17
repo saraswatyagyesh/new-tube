@@ -95,6 +95,20 @@ export default function Home() {
     - Use auth state on sidebar sections
     - Protect routes
 
+- For setting up clerk
+    - GOTO `clerk.com` and setup an account
+    - Create a new app there
+    - select desired singnIn options, here use google for now
+    - Now comes the terminal cmds
+        - Use `bun add @clerk/nextjs@6` to install clerk in yr project
+        - Copy and paste the env variables from the clerk app dashboard, to yr local `.env.local` file
+            - The keys are `NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY` and `CLERK_SECRET_KEY`
+        - Create `src/middleware.ts` to setup the middleware
+        >- GOTO `middleware.ts` file
+
+    - Now we will setup a `sign-in-or-up pages`
+        - For this create `/src/app/(auth)/sign-in/[[...sign-in]]/page.tsx`
+
 
 ------------------------------------------------------------------------------
 # 4 Webhook sync
