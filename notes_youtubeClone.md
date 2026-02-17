@@ -57,29 +57,6 @@
     - Search inputs
     - Signin component
 
-- Before we start, download the image from the link given in the videos description. Make sure to save that file in the `public` folder as `logo.svg`
-    - Now we will add it in the home page
-```jsx
-// app/page.tsx
-import Image from "next/image";
-
-export default function Home() {
-    return (
-        <div>
-            <Image src="logo.svg" height={50} width={50} alt="logo" />
-            <p className="text-xl font-semibold tracking-tight">New Tube<p>
-        </div>
-    )
-}
-
-```
-- Some changes are made in `src/app/layout.tsx` file, make sure to do those changes in your own code too 
-
-
-- Now let's learn the basic app router folders
-
-
-
 
 ## Database
 
