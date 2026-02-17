@@ -39,7 +39,7 @@
 - Adding ShadCN/UI
     - Head over to shadCN/UI page, then
     - Check for latest version with `bunx shadcn@latest --version` and install it with `bunx --bun shadcn@2.1.8 init` command
-    - After this there will be around 6 modified files \
+    - After this there will be around 6 modified files
     - In order to install all of the components run `bunx --bun shadcn@2.1.8 add --all` command to install the shadcn/ui components 
 
 - Now you can repeat the basic rendering done in order to check if project is runnning or not
