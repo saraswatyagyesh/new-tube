@@ -87,6 +87,14 @@ export default function Home() {
 ------------------------------------------------------------------------------
 # 3 Authentication
 
+- In this section, we will setup authentication, for now it will be basic authentication
+    - Integrate clerk
+    - Add sign in screens
+    - Add user buttons
+    - Add middleware
+    - Use auth state on sidebar sections
+    - Protect routes
+
 
 ------------------------------------------------------------------------------
 # 4 Webhook sync
