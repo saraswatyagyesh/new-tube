@@ -108,7 +108,9 @@ export default function Home() {
 
     - Now we will setup a `sign-in-or-up pages`
         - For this create `/src/app/(auth)/sign-in/[[...sign-in]]/page.tsx`
-
+        - Also in the `.env.local` file, add `NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in` also same for `SIGN-UP` too 
+        - Also setup `NEXT_PUBLIC_CLERK_SIGN_IN_FALLBACK_REDIRECT_URL=/` and same for `SIGN-UP` too
+        >- GOTO `/src/app/(auth)/sign-in/[[...sign-in]]/page.tsx` file
 
 ------------------------------------------------------------------------------
 # 4 Webhook sync
