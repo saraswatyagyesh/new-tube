@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { redirect } from "next/navigation";
-import { auth } from "@clerk/nextjs/server"
+import { auth } from "@/lib/auth-server"
 
 import { db } from "@/db";
 import { users } from "@/db/schema";

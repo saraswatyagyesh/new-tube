@@ -1,7 +1,7 @@
 import { Webhook } from 'svix'
 import { eq } from 'drizzle-orm'
 import { headers } from 'next/headers'
-import { WebhookEvent } from '@clerk/nextjs/server'
+import { WebhookEvent } from "@/lib/auth-server"
 
 import { db } from '@/db'
 import { users } from '@/db/schema'

@@ -2,7 +2,7 @@ import Link from "next/link";
 import { toast } from "sonner";
 import { useState } from "react";
 import { formatDistanceToNow } from "date-fns";
-import { useAuth, useClerk } from "@clerk/nextjs";
+import { useAuth, useClerk } from "@/lib/auth-client";
 import { ChevronDownIcon, ChevronUpIcon, MessageSquareIcon, MoreVerticalIcon, ThumbsDownIcon, ThumbsUpIcon, Trash2Icon } from "lucide-react";
 
 import { cn } from "@/lib/utils";

@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { toast } from "sonner";
 import { useForm } from "react-hook-form";
-import { useUser, useClerk } from "@clerk/nextjs";
+import { useUser, useClerk } from "@/lib/auth-client";
 import { zodResolver } from "@hookform/resolvers/zod";
 
 import { trpc } from "@/trpc/client";

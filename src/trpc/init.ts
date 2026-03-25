@@ -1,7 +1,7 @@
 import { db } from '@/db';
 import { eq } from 'drizzle-orm';
 import { users } from '@/db/schema';
-import { auth } from '@clerk/nextjs/server';
+import { auth } from "@/lib/auth-server";
 import { initTRPC, TRPCError } from '@trpc/server';
 import { cache } from 'react';
 import superjson from "superjson";

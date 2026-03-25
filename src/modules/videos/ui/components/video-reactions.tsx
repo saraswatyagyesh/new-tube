@@ -1,5 +1,5 @@
 import { toast } from "sonner";
-import { useClerk } from "@clerk/nextjs";
+import { useClerk } from "@/lib/auth-client";
 import { ThumbsDownIcon, ThumbsUpIcon } from "lucide-react";
 
 import { cn } from "@/lib/utils";

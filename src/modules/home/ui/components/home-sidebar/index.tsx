@@ -1,4 +1,4 @@
-import { SignedIn } from "@clerk/nextjs"
+import { SignedIn } from "@/lib/auth-client"
 
 import { Separator } from "@/components/ui/separator"
 import { Sidebar, SidebarContent } from "@/components/ui/sidebar"

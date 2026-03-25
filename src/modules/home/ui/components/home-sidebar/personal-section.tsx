@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useAuth, useClerk } from "@clerk/nextjs";
+import { useAuth, useClerk } from "@/lib/auth-client";
 import { HistoryIcon, ListVideoIcon, ThumbsUpIcon } from "lucide-react";
 
 import { 

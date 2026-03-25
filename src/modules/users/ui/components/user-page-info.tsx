@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useClerk, useAuth } from "@clerk/nextjs";
+import { useClerk, useAuth } from "@/lib/auth-client";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAuth } from "@clerk/nextjs";
+import { useAuth } from "@/lib/auth-client";
 import { Edit2Icon } from "lucide-react";
 
 import { cn } from "@/lib/utils";

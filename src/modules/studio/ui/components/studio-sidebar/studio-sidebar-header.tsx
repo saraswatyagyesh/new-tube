@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useUser } from "@clerk/nextjs";
+import { useUser } from "@/lib/auth-client";
 
 import { Skeleton } from "@/components/ui/skeleton";
 import { UserAvatar } from "@/components/user-avatar";

@@ -1,6 +1,6 @@
 import { z } from "zod";
 import { eq, and } from "drizzle-orm";
-import { auth } from "@clerk/nextjs/server";
+import { auth } from "@/lib/auth-server";
 import { UploadThingError, UTApi } from "uploadthing/server";
 import { createUploadthing, type FileRouter } from "uploadthing/next";
 

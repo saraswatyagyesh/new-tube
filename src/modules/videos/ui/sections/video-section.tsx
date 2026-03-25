@@ -1,7 +1,7 @@
 "use client";
 
 import { Suspense } from "react";
-import { useAuth } from "@clerk/nextjs";
+import { useAuth } from "@/lib/auth-client";
 import { ErrorBoundary } from "react-error-boundary";
 
 import { cn } from "@/lib/utils";
