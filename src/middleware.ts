@@ -1,19 +1,21 @@
-/*-------------------------------------------------------------------------------------------------
-                                            ADDING CLERRK MIDDLEWARE
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-- After seting up the clerk account,
-- Copy the middlware code from clerk documentation or AuthApp dashboard into this file
+const isProtectedRoute = createRouteMatcher([
+  "/studio(.*)",
+  "/subscriptions",
+  "/feed/subscribed",
+  "/playlists(.*)"
+]);
 
-- After that, in the /src/app/layout.tsx file 
-    import { ClerkProvider } from "@clerk/nextjs";
+export default clerkMiddleware(async (auth, req) => {
+  if (isProtectedRoute(req)) await auth.protect();
+});
 
-    return(
-        <ClerkProvider>
-            Wrap the whole application inside that
-        </ClerkProvider>
-    )
-
-- Now you can do `bun run dev`
-- Head to notes.md to create yr own sign-in-or-up page
-
---------------------------------------------------------------------------------------------------*/
+export const config = {
+  matcher: [
+    // Skip Next.js internals and all static files, unless found in search params
+    '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
+    // Always run for API routes
+    '/(api|trpc)(.*)',
+  ],
+};
